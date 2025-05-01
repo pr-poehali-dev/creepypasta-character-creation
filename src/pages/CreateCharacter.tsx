@@ -19,13 +19,16 @@ import { Textarea } from '@/components/ui/textarea'
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select'
 import { Slider } from '@/components/ui/slider'
 import { RadioGroup, RadioGroupItem } from '@/components/ui/radio-group'
-import { toast } from '@/components/ui/use-toast'
 
-// Схема валидации формы
-const formSchema = z.object({
-  name: z.string().min(2, { message: "Имя должно содержать не менее 2 символов" }).max(50),
-  type: z.string({ required_error: "Выберите тип персонажа" }),
-  origin: z.string().min(5, { message: "История происхождения должна содержать не менее 5 символов" }),
+          <div className="text-center mb-8">
+            <h1 className="text-3xl md:text-4xl font-bold text-red-500 mb-2">
+              Создание персонажа для XoppopsladyH
+            </h1>
+            <p className="text-gray-300 max-w-2xl mx-auto">
+              Опиши своего зловещего персонажа и добавь его в мир XoppopsladyH
+            </p>
+          </div>
+
   appearance: z.string().min(10, { message: "Опишите внешность подробнее" }),
   abilities: z.string().optional(),
   scaryFactor: z.number().min(1).max(10),

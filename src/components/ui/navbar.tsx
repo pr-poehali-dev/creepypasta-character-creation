@@ -8,9 +8,11 @@ const Navbar = () => {
   return (
     <nav className="bg-zinc-900 text-gray-100 py-4 px-6 shadow-md">
       <div className="container mx-auto flex justify-between items-center">
+
         <Link to="/" className="text-2xl font-bold text-red-500 hover:text-red-400 transition-colors">
-          CreepyTales
+          XoppopsladyH
         </Link>
+
         
         <div className="flex space-x-6">
           <NavLink to="/" icon="Home">
